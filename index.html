@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powerwashing Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- External Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Swiper Carousel -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<!-- SCROLL PROGRESS BAR -->
+<div id="scroll-progress"></div>
+
+<!-- HEADER -->
+<header class="sticky-header">
+  <div class="header-container">
+    <div class="logo">Powerwashing Services</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#equipment">Equipment</a>
+      <a href="#contact">Contact</a>
+      <a href="#faqs">FAQs</a>
+    </nav>
+    <div class="header-buttons">
+      <button class="btn-primary" onclick="openModal('quoteModal')" title="Request a Free Quote">Get Started</button>
+      <button class="btn-secondary" title="Learn More About Us">Learn More</button>
+    </div>
+  </div>
+</header>
+
+<!-- FULLSCREEN HERO VIDEO -->
+<section id="home" class="hero-section">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="your-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-content">
+    <h1 class="glow-text">Welcome to Our Powerwashing Services</h1>
+    <p>Making Your Property Shine, One Wash at a Time!</p>
+    <div class="hero-buttons">
+      <button class="btn-primary" onclick="openModal('quoteModal')">Get a Free Quote</button>
+      <button class="btn-secondary">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION WITH CAROUSEL -->
+<section id="services">
+  <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="service1.jpg" alt="Service 1"></div>
+      <div class="swiper-slide"><img src="service2.jpg" alt="Service 2"></div>
+      <div class="swiper-slide"><img src="service3.jpg" alt="Service 3"></div>
+      <div class="swiper-slide"><img src="service4.jpg" alt="Service 4"></div>
+      <div class="swiper-slide"><img src="service5.jpg" alt="Service 5"></div>
+    </div>
+  </div>
+
+  <div class="service-highlights" data-aos="fade-up">
+    <div class="card">
+      <h3>Professional Powerwashing</h3>
+      <span class="badge">Top Rated</span>
+      <p>Experienced team using premium equipment.</p>
+    </div>
+    <div class="card">
+      <h3>Residential & Commercial</h3>
+      <p>We clean homes, driveways, businesses, and more.</p>
+    </div>
+    <div class="card">
+      <h3>Eco-Friendly Solutions</h3>
+      <p>Safe cleaning without harsh chemicals.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT SECTION WITH FLIP CARDS -->
+<section id="equipment" class="cards-section">
+  <h2 class="section-title" data-aos="fade-right">Our Equipment</h2>
+
+  <div class="card-container">
+    <div class="flip-card" data-aos="fade-up">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>Powerful Cleaning</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Top pressure washers for deep cleans.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>Eco Products</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Green-safe detergents and methods.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>Versatile Solutions</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Roofs, sidewalks, patios, fences & more.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS COUNTER SECTION -->
+<section class="stats-counter" id="stats">
+  <div class="counter-box" data-aos="zoom-in">
+    <h2><span class="count" data-target="500">0</span>+</h2>
+    <p>Homes Cleaned</p>
+  </div>
+  <div class="counter-box" data-aos="zoom-in" data-aos-delay="100">
+    <h2><span class="count" data-target="200">0</span>+</h2>
+    <p>Businesses Served</p>
+  </div>
+  <div class="counter-box" data-aos="zoom-in" data-aos-delay="200">
+    <h2><span class="count" data-target="1000">0</span>+</h2>
+    <p>Driveways Restored</p>
+  </div>
+</section>
+
+<!-- FAQ ACCORDION SECTION -->
+<section id="faqs" class="faq-section">
+  <h2 class="section-title" data-aos="fade-up">FAQs</h2>
+  <div class="accordion" data-aos="fade-up">
+    <div class="accordion-item">
+      <button class="accordion-btn">What areas do you service?</button>
+      <div class="accordion-content">
+        <p>We service all nearby cities within 50 miles radius.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-btn">Are your cleaning solutions safe?</button>
+      <div class="accordion-content">
+        <p>Yes! We use eco-friendly products safe for families, pets, and plants.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-btn">Do you offer free estimates?</button>
+      <div class="accordion-content">
+        <p>Absolutely. Contact us to schedule a free on-site quote.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="testimonials">
+  <h2 class="section-title" data-aos="fade-right">Customer Reviews</h2>
+  <div class="testimonial" data-aos="fade-up">
+    <img src="john.jpg" alt="John Smith">
+    <p><strong>John Smith</strong> ★★★★★<br>"Incredible transformation for my driveway!"</p>
+  </div>
+  <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+    <img src="sarah.jpg" alt="Sarah Johnson">
+    <p><strong>Sarah Johnson</strong> ★★★★★<br>"Super professional team. Highly recommend."</p>
+  </div>
+</section>
+
+<!-- CONTACT FORM SECTION -->
+<section id="contact" class="contact-section">
+  <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+
+  <div class="contact-chips">
+    <div class="chip"><i class="fas fa-map-marker-alt"></i> Main Office: 123 Powerwash St.</div>
+    <div class="chip"><i class="fas fa-phone"></i> (123) 456-7890</div>
+    <div class="chip"><i class="fas fa-envelope"></i> support@powerwash.com</div>
+  </div>
+
+  <form class="contact-form" data-aos="fade-up">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+</section>
+
+<!-- BACK TO TOP BUTTON -->
+<button id="scrollToTopBtn" title="Scroll to Top">⬆️</button>
+
+<!-- FOOTER -->
+<footer>
+  <p>Powerwashing Services | © 2024</p>
+  <nav>
+    <a href="#home">Home</a> |
+    <a href="#services">Services</a> |
+    <a href="#equipment">Equipment</a> |
+    <a href="#contact">Contact</a> |
+    <a href="#faqs">FAQs</a>
+  </nav>
+</footer>
+
+<!-- QUOTE MODAL -->
+<div id="quoteModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('quoteModal')">&times;</span>
+    <h2>Request a Free Quote</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Property Address" required>
+      <textarea placeholder="Describe your project..." required></textarea>
+      <button type="submit" class="btn-primary">Submit Request</button>
+    </form>
+  </div>
+</div>
+
+<!-- External Scripts -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="scripts.js"></script>
+
+</body>
+</html>
